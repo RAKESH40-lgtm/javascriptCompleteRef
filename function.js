@@ -62,3 +62,46 @@ const isOdd=num=>num%2===1;//also arrow function
 console.log(isOdd(5))
 
 //hoisting
+hello();//function hosting before declaration but this is not applicable through function expression and arrow  function
+function hello(){
+    console.log("hello")
+}
+hello();
+console.log(hello);//create undefined in cases of var but const and let gives a cannot access before initialization.
+// console.log(hi)
+// console.log(greetMe)
+var hello="hello"
+let hi="Hi"
+const greetMe="greets"
+
+//function inside function:can be anything kind of declare 
+const app=()=>{
+    const myFunc=()=>{
+        console.log("hello")
+    }
+    const addTwo=(num1,num2)=>{
+        return num1+num2
+    }
+    console.log("inside app")
+    myFunc()
+    console.log(addTwo(2,3))
+}
+// app()
+
+//lexical scope:it sees inside the function for variable if not present it checks in lexical envt which where it's defined then it print that ,like a global declaration kind .,which is called as lexical scope chaining
+const myVar="value1"
+function myFunc(){
+    // const myVar="value1"
+    function empty(){
+        // const myVar=69;
+        console.log("inside empty",myVar)
+    }
+    const myempty=()=>{
+        console.log(myVar)
+    }
+    
+    console.log(myVar)
+    empty()
+    myempty()
+}
+myFunc()
