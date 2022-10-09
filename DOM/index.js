@@ -71,4 +71,40 @@ forthway:like third way instead of async write defer like this
 // console.log(headline.innerHTML)//by this .innerhtml can print the inner elements of that main container  and we can change its elements as shown in line 72-73
 // headline.innerHTML="<h1>inner Html</h1>"
 // headline.innerHTML+="<button class=\"btn\">Learn more</button>"
-// console.log(headline.innerHTML) 
+// console.log(headline.innerHTML)
+// const section=document.querySelector(".todo-section") 
+// console.log(section.classList)//tells total no of class in that  targeted element
+// section.classList.add("bg-dark")//to add class to that classlist
+// section.classList.remove("container")//to remove that class list
+// const checkClass=section.classList.contains("container")//to check if the container class is present or not
+// console.log(checkClass)
+// section.classList.toggle("bg-dark")//it toggle like if present then it removes and viceversa
+// section.classList.toggle("bg-dark")
+//repeat same to class header
+// const header=document.querySelector(".header")
+// console.log(header.classList)
+// header.classList.add("bg-dark")//if it's in order then it takes speificity
+// const todoList=document.querySelector(".todo-list")
+// console.log(todoList.innerHTML)//to see the innerhtml of todolist
+// todoList.innerHTML="<li>New to</li>"
+// todoList.innerHTML+="<li>New to</li>"
+// todoList.innerHTML+="<li>techie</li>"//by this innerhtml we can add elements through js and with this += we're appending
+//when to use this and not:we shouldn't do like this due to it decrease performance like it render again and again ,but you can use you have all html text to change then you can doit but not add new one 
+//instead of above we can do like below
+// const newTodo=document.createElement("li")
+// const newTodoTxt=document.createTextNode("Good guy")//instead of creating txt node we can alternatively do like below
+// newTodo.textContent="Good guy"
+// newTodo.append(newTodoTxt)//adding txt to the li 
+// todoList.append(newTodo)//this way to add element at last
+//.appendChild()is older version and use in explorer
+// todoList.prepend(newTodo)//append at starting
+// console.log(newTodo)
+// const todo1=document.querySelector(".todo-list li")
+// console.log(todo1)
+// todo1.remove()//it will remove the todo1 element
+//to add before ul use before and use after for after
+// const newTodo=document.createElement("li")
+// newTodo.textContent="Good guy"
+// const todo1=document.querySelector(".todo-list")
+// todo1.before(newTodo)//it add the before list  
+// todo1.after(newTodo)//it add the after list  
