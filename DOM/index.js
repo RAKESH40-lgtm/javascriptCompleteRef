@@ -107,4 +107,4 @@ forthway:like third way instead of async write defer like this
 // newTodo.textContent="Good guy"
 // const todo1=document.querySelector(".todo-list")
 // todo1.before(newTodo)//it add the before list  
-// todo1.after(newTodo)//it add the after list  
+// todo1.after(newTodo)//it add the after list

@@ -61,6 +61,10 @@ a{
     margin-top: 5rem;
     text-align: center;
 }
+.bg-dark{
+    background: black;
+    color: white;
+}
 .form-todo{
     min-height: 5vh;
     display: flex;
@@ -81,6 +85,27 @@ a{
     background: rgb(44,55,65);
     color: white;
     font-weight: bold;
+}
+.todo-list{
+    text-align:left;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+.todo-list li{
+    padding: 0.7rem;
+    background:#444;
+    color: white;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-btn{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 .section-signup{
     margin: 5rem auto ;
